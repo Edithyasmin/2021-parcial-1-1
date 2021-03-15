@@ -1,0 +1,96 @@
+def cargar_alumnos():
+
+    print()
+    alumno = input("Nombre del alumno: ")
+    carnet = int(input("Dame el numero de carnet del alumno: "))
+    print()
+
+    return (alumno, carnet)
+
+nombre1=cargar_alumnos()
+nombre2=cargar_alumnos()
+nombre3=cargar_alumnos()
+nombre4=cargar_alumnos()
+nombre5=cargar_alumnos()
+nombre6=cargar_alumnos()
+nombre7=cargar_alumnos()
+nombre8=cargar_alumnos()
+nombre9=cargar_alumnos()
+nombre10=cargar_alumnos()
+
+print([nombre1], [nombre2], [nombre3], [nombre4], [nombre5], [nombre6], [nombre7], [nombre8], [nombre9], [nombre10])
+
+def ejercicio2():
+    marcas=[]
+    codigos=[]
+    for x in range(10):
+        nom=input("Ingrese la marca del producto:")
+        marcas.append(nom)
+        no1=input("Ingrese Nombre del producto:")
+        no2=input("Ingrese codigo de un producto:")
+        codigos.append([no1,no2])
+    for x in range(10):
+        print(marcas[x],codigos[x][0],codigos[x][1])
+ejercicio2()
+
+ejercicio3()
+def cargar():
+    paises={}
+    for x in range(2):
+        pais=input("Ingrese el nombre de un pais:")
+        capital=input("Ingrese la capital:")
+        paises[pais] = capital
+    return paises
+
+ejercicio3()
+
+def imprimir(paises):
+    print("Listado del diccionario completo")
+    for pais in paises:
+        print(pais, paises[pais])
+paises=cargar()
+imprim
+ir(paises)
+
+ejercicio4()
+
+def examen():
+
+
+    cont=0
+    conta=0
+    contad=0
+
+
+
+    for x in range(8):
+
+
+        jugador=input('ingrese el nombre del jugador: ')
+        edad=int(input('ingrese la edad del jugador: '))
+
+        Novato='Novato'
+        Experto='Experto'
+        Super_Experto='Super_Experto'
+
+        if edad < 14:
+            print('INGRESO UNA EDAD NO VALIDA')
+            return()
+
+        elif edad >= 14  and edad<=16:
+            print([jugador], [edad], [Novato])
+            cont+=1
+
+        elif edad >16 and edad<=20:
+            print([jugador], [edad], [Experto])
+            conta+=1
+
+        elif edad > 20:
+            print([jugador], [edad], [Super_Experto])
+            contad+=1
+
+    print('los jugadores Novato son: ', cont)
+    print('los jugadores Experto son: ', conta)
+    print('los jugadores Super Expertos son: ', contad)
+
+examen()
